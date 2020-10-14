@@ -1,13 +1,15 @@
 ## Setup
-clone repository with 'git clone .....'
 install dependencies with `npm install`
 
 
 
 ## Setup database
-in js/ create ´texts.sqlite´
+in js/ create `texts.sqlite`
+
 run 'sqlite3 texts.sqlite
+
 sqlite > .read migrate.sql
+
 sqlite > .exit
 
 
@@ -16,11 +18,11 @@ sqlite > .exit
 
 In the project directory, you can run:
 
-### ´npm start´
+### `npm start`
 starts server on [http://localhost:1337](http://localhost:1337) <br />
 The server will reload if you make edits.
 
-### ´npm production´
+### `npm production`
 starts production server<br />
 
 ### `npm test`

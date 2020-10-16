@@ -40,7 +40,7 @@ module.exports = (function() {
 
             res.status(201).json({
                 data: {
-                    msg: kmom + "with textcontent: " + content
+                    msg: kmom + " with textcontent: " + content
                 }
             });
         });

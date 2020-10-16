@@ -11,6 +11,7 @@ const port = 1337;
 // require the routes
 const mepage = require("./routes/me.js");
 const kmom01 = require("./routes/kmom01.js");
+const kmom02 = require("./routes/kmom02.js");
 const reports = require("./routes/reports.js");
 const register = require("./routes/register.js");
 const login = require("./routes/login.js");
@@ -37,7 +38,8 @@ if (process.env.NODE_ENV !== 'test') {
 app.use('/login', login);
 app.use('/register', register);
 app.use('/reports/week/1', kmom01);
-app.use('/reports/week/:kmom', reports);
+app.use('/reports/week/2', kmom02);
+// app.use('/reports/week/:kmom', reports);
 app.use('/test', test);
 app.use('/', mepage);
 
